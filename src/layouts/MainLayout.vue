@@ -4,7 +4,7 @@
       <q-toolbar>
         <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
 
-        <q-toolbar-title> Test App</q-toolbar-title>
+        <q-toolbar-title>Simple Portfolio</q-toolbar-title>
 
         <div>Version 1.0.0</div>
       </q-toolbar>
@@ -12,7 +12,7 @@
 
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <q-list>
-        <q-item-label header> Test App Navigation </q-item-label>
+        <q-item-label header> Navigation </q-item-label>
 
         <EssentialLink v-for="link in linksList" :key="link.title" v-bind="link" />
       </q-list>
