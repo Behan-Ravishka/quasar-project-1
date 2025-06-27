@@ -7,14 +7,14 @@
         <!-- This column holds the avatar. It stacks on mobile. -->
         <div class="col-12 col-sm-auto">
           <q-avatar size="100px">
-            <img src="src/images/profile.png" alt="profile photo" />
+            <img :src="profileImg" alt="profile photo" />
           </q-avatar>
         </div>
 
         <!-- This column holds the H1 text. -->
         <div class="col-12 col-sm-auto">
           <h1 class="text-h2 text-weight-bold no-margin text-center text-sm-left">
-            Hi, I'm Behan Perera
+            Hi, I'm M P Behan Ravishka Perera
           </h1>
         </div>
       </div>
@@ -119,11 +119,10 @@
       </div>
     </div>
     <q-img
-      src="src/images/bg.png"
-      class="absolute-full"
+      :src="bgImg"
+      class="fixed-top-left full-width full-height"
       style="opacity: 0.08; z-index: -1"
-      contain
-      cover
+      fit="cover"
       position="center"
       loading="lazy"
       alt="Background Image"
@@ -133,6 +132,8 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import profileImg from 'src/images/profile.png'
+import bgImg from 'src/images/bg.png'
 
 // --- Configuration for the Looping Typewriter ---
 const phrases = [

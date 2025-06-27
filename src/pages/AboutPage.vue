@@ -7,7 +7,7 @@
           <div class="image-container">
             <div class="image-wrapper">
               <q-img
-                src="src/images/profile.png"
+                :src="profileImg"
                 alt="Behan Ravishka Perera"
                 class="profile-image"
                 ratio="1"
@@ -93,6 +93,7 @@
 
 <script setup>
 import { ref } from 'vue'
+import profileImg from 'src/images/profile.png'
 
 const skills = ref([
   { name: 'Web Development', icon: 'mdi-web', color: 'primary' },
