@@ -12,7 +12,7 @@
 
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <q-list>
-        <q-item-label header> Navigation </q-item-label>
+        <q-item-label header>- Choose -</q-item-label>
 
         <EssentialLink v-for="link in linksList" :key="link.title" v-bind="link" />
       </q-list>
@@ -46,6 +46,18 @@ const linksList = [
     caption: 'Contact us',
     icon: 'call',
     link: 'contact',
+  },
+  {
+    title: 'projects',
+    caption: 'My Projects',
+    icon: 'work',
+    link: 'projects',
+  },
+  {
+    title: 'experience',
+    caption: 'My Experience',
+    icon: 'work_history',
+    link: 'work',
   },
 ]
 
