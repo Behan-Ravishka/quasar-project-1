@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.behan.portfolio" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>My Portfolio App</name>
+    <name>My Portfolio</name>
     <description>A very first Quasar Project</description>
     <author email="behanravishka03@gmail.com" href="https://www.linkedin.com/in/behanravishkaperera">
         M P Behan Ravishka Perera
@@ -17,4 +17,7 @@
         <icon density="xxhdpi" src="resources/android/icon/drawable-xxhdpi-icon.png" />
         <icon density="xxxhdpi" src="resources/android/icon/drawable-xxxhdpi-icon.png" />
     </platform>
+    <preference name="SplashScreen" value="none" />
+    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="SplashScreenDelay" value="0" />
 </widget>
